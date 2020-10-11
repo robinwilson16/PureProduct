@@ -1,0 +1,189 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container bg-white Spacer">
+    <div class="row">
+        <div class="col-md">
+            <h3>
+                Welcome to Pure Product
+            </h3>
+            <h4>
+                Pure Product is an authorised distributer for Carico and Aqua Viva products, providing a range of products to help you live a longer and healthier life by:
+            </h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Improving the quality of the water you drink</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Improving the quality of your sleep</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Improving the quality of cleaning and sanitising your home</li>
+            </ul>
+        </div>
+        <div class="col-md">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Improving the quality of the air you breathe</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Improving the quality of the food you eat</li>
+                <li class="list-group-item"><i class="fas fa-check-circle"></i> Helping you prepare healthy juices and smoothies</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container bg-white Spacer">
+    <div class="row">
+        <div class="col-md">
+            <h3>
+                Products We Offer:
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div class="container bg-white">
+    <div class="row">
+        <div class="col-md-4 d-flex align-items-stretch">
+            <div class="card">
+                <img src="/images/PureWater.jpg" class="card-img-top" alt="Image of some clean water">
+                <div class="card-body">
+                    <h5 class="card-title">Water Filtration</h5>
+                    <p class="card-text">Remove impurities, toxic chemicals and more, while retaining healthy minerals</p>
+                </div>
+                <div class="card-footer">
+                    <a href="/Water" class="btn btn-primary btn-block"><i class="fas fa-water"></i> Learn More ...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-stretch">
+            <div class="card">
+                <img src="/images/CleanAir.jpg" class="card-img-top" alt="Image of a dandilion in some grass">
+                <div class="card-body">
+                    <h5 class="card-title">Air Purification</h5>
+                    <p class="card-text">Air purification system that removes odors, mold and particles up to 5x smaller than the thickness of a human hair.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="/Air" class="btn btn-primary btn-block"><i class="fas fa-wind"></i> Learn More...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-stretch">
+            <div class="card">
+                <img src="/images/AquaViva.jpg" class="card-img-top" alt="Image of the Carico Aqua Viva Vacuum">
+                <div class="card-body">
+                    <h5 class="card-title">Vacuuming, Air Purification and Sanitising</h5>
+                    <p class="card-text">The most advanced, revolutionary cleaning system, taking vacuuming, air purification and sanitising to the next level.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="/AquaViva" class="btn btn-primary btn-block"><i class="fas fa-hand-sparkles"></i> Learn More...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-stretch">
+            <div class="card">
+                <img src="/images/RestfulSleep.jpg" class="card-img-top" alt="Image of a woman sleeping">
+                <div class="card-body">
+                    <h5 class="card-title">Mattresses</h5>
+                    <p class="card-text">The only orthopedic, hypo-allergenic sleep system that you can adjust to four different comfort settings.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="/Sleep" class="btn btn-primary btn-block"><i class="fas fa-bed"></i> Learn More...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-stretch">
+            <div class="card">
+                <img src="/images/FreshSalad.jpg" class="card-img-top" alt="Fresh salad">
+                <div class="card-body">
+                    <h5 class="card-title">Cookware</h5>
+                    <p class="card-text">Retain nutrients by cooking without water or grease.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="/Cooking" class="btn btn-primary btn-block"><i class="fas fa-heart"></i> Learn More...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-stretch">
+            <div class="card">
+                <img src="/images/Fruit.jpg" class="card-img-top" alt="Fresh Fruit">
+                <div class="card-body">
+                    <h5 class="card-title">Juicer</h5>
+                    <p class="card-text">Experts love Nutri-Tech and agree that many health problems are related to dietary deficiencies.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="/Juicer" class="btn btn-primary btn-block"><i class="fas fa-blender"></i> Learn More...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container bg-white SpacerBottom">
+    <div class="row">
+        <div class="col-md Spacer">
+            <h3>
+                Contact Form and Map
+            </h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md">
+            <div class="container">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="row">
+                    <div class="col-xl">
+                        <h4><i class="far fa-id-card"></i> Personal Details</h4>
+
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label">Name</label>
+                            <div class="col-md-8">
+                                <input class="form-control" />
+                                <span class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label">Email</label>
+                            <div class="col-md-8">
+                                <input class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label">Telephone</label>
+                            <div class="col-md-8">
+                                <input class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl">
+                        <h4><i class="fas fa-envelope-open-text"></i> Enquiry</h4>
+
+                        <div class="form-group row">
+                            <div class="col-md">
+                                <textarea class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md d-md-block d-sm-none">
+
+                    </div>
+                    <div class="col-xl-4 col-lg-8">
+                        <button type="submit" class="btn btn-primary btn-block SendEnquiry"><i class="fas fa-paper-plane"></i> Send Enquiry</button>
+                    </div>
+                    <div class="col-md d-md-block d-sm-none">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col col-md">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2288.0624190431395!2d-1.6064724840982805!3d55.007070880360466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e713b22cf5e77%3A0x1c9c86ecc057b6a!2sGeneration%20House%2C%2044%20Station%20Rd%2C%20Gosforth%2C%20Newcastle%20upon%20Tyne%20NE3%201QD!5e0!3m2!1sen!2suk!4v1599431669481!5m2!1sen!2suk" class="Map" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>

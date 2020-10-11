@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewData["Title"] - PureProduct</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/twitter-bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/lib/font-awesome/css/all.css" />
+        <link rel="stylesheet" href="~/lib/ekko-lightbox/ekko-lightbox.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" crossorigin="anonymous" />
+    </environment>
+
+    <link href="//fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/css/slider.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-toggleable-lg navbar-light sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand" asp-area="" asp-page="/Index"><img src="/images/PureProductLogoNavbar.gif" alt="Pure Product Logo" class="NavbarLogo" /> Pure Product</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#PageNavigationMenu" aria-controls="PageNavigationMenu"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse flex-grow-1 text-center text-lg-right" id="PageNavigationMenu">
+                @*<partial name="_LoginPartial" />*@
+                <ul class="navbar-nav ml-auto flex-nowrap">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-page="/Index"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Our Products
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" asp-area="" asp-page="/Water"><i class="fas fa-water"></i> Clean Water - Water Filtration</a>
+                            <a class="dropdown-item" asp-area="" asp-page="/Air"><i class="fas fa-wind"></i> Clean Air - Air Purifier</a>
+                            <a class="dropdown-item" asp-area="" asp-page="/AquaViva"><i class="fas fa-wind"></i> Clean House - Vacuuming/Cleaning and Sanitizing</a>
+                            <a class="dropdown-item" asp-area="" asp-page="/Sleep"><i class="fas fa-bed"></i> Relaxing Sleep - Bed</a>
+                            <a class="dropdown-item" asp-area="" asp-page="/Cooking"><i class="fas fa-heart"></i> Healthy Cooking - Pans</a>
+                            <a class="dropdown-item" asp-area="" asp-page="/Juicer"><i class="fas fa-blender"></i> Smoothies &amp; Juices - Juice Extractor</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-page="/About"><i class="fas fa-question-circle"></i> About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-page="/Contact"><i class="fas fa-envelope-open-text"></i> Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    @*<div class="container-fluid bg-white">
+            <div class="TopLogo d-flex justify-content-center">
+                <img src="~/images/PureProduct.png" alt="Pure Product Logo" class="my-auto" />
+            </div>
+        </div>*@
+    <div class="container-fluid TopBackground">
+        <div class="TopLogo d-flex justify-content-center">
+            <img src="~/images/PureProduct.png" alt="Pure Product Logo" class="my-auto" />
+        </div>
+        <div class="BackgroundImg">
+            <img src="/images/FamilyOnPierFull.jpg" alt="Image of a family standing on a pier looking over at the sunset" class="img-fluid" />
+        </div>
+    </div>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer text-muted">
+        <div class="container text-center">
+            &copy; 2020 - Pure Product
+        </div>
+    </footer>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js" asp-append-version="true"></script>
+        <script src="~/lib/twitter-bootstrap/js/bootstrap.bundle.js" asp-append-version="true"></script>
+        <script src="~/lib/ekko-lightbox/ekko-lightbox.js" asp-append-version="true"></script>
+        <script src="~/lib/ScrollMagic/ScrollMagic.js" asp-append-version="true"></script>
+        <script src="~/lib/ScrollMagic/plugins/debug.addIndicators.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" crossorigin="anonymous">
+        </script>
+    </environment>
+
+    <script src="~/js/modals.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
